@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Afvalcoach</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Afvalcoach</h1>
+  <p>Laat een voorwerp zien aan de webcam of upload een foto.</p>
+
+  <button id="start">Start webcam</button>
+  <input type="file" id="upload" accept="image/*">
+
+  <div id="webcam"></div>
+  <img id="foto" alt="Gekozen foto">
+  <p id="label">Wachten...</p>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
